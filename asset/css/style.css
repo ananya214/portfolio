@@ -22,11 +22,6 @@
   --skill-card-bg: #4f3740;
 }
 
-* {
-  font-family: "Quicksand", sans-serif;
-}
-
-/* === Base Layout === */
 html,
 body {
   margin: 0;
