@@ -831,3 +831,13 @@ body::-webkit-scrollbar {
     background: var(--right-bg);
   }
 }
+
+body {
+  font-family: "Inter", sans-serif !important;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Playfair Display", serif !important;
+}
