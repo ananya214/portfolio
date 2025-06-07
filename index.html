@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sunflower Portfolio</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Theme Toggle Button -->
+    <button class="theme-toggle" aria-label="Toggle Dark Mode">🌞</button>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Hi there, I’m Ananya</h1>
+        <p>Frontend Developer & Designer crafting delicate digital blooms</p>
+        <a href="#projects" class="cta-button">Discover My Creations</a>
+      </div>
+      <div class="avatar-placeholder">
+        <!-- Use relative path for image -->
+        <img
+          src="C:\Users\as082\OneDrive\Desktop\Ananya\Portfolio2\img5.png"
+          alt="Ananya's Avatar"
+          class="avatar-image"
+        />
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+      <h2>About Me</h2>
+      <div class="about-cards">
+        <div class="card">
+          🌻 <strong>Who I Am</strong><br />
+          A soul wrapped in warmth and calm, I create with an artistic spirit. I
+          believe beauty lives in simplicity and gentle details.
+        </div>
+        <div class="card">
+          🎨 <strong>What I Love</strong><br />
+          Crafting clean, elegant designs that dance with soft pastels and cozy
+          hues. My inspiration blooms from nature’s whispers and the endless
+          scroll of Pinterest dreams.
+        </div>
+        <div class="card">
+          ✨ <strong>Sunlight Side</strong><br />
+          I nurture ideas with patience, allowing them the time they need to
+          grow. My energy flows quietly, guiding and supporting with gentle
+          encouragement.
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+      <h2>
+        Skills
+        <span class="accent-flower" aria-hidden="true"></span>
+      </h2>
+      <p class="skills-intro">
+        My toolkit for crafting calm, thoughtful, and beautifully detailed
+        digital experiences.
+      </p>
+      <div class="skill-tags">
+        <span class="skill-tag">HTML</span>
+        <span class="skill-tag">CSS</span>
+        <span class="skill-tag">JavaScript</span>
+        <span class="skill-tag">GSAP</span>
+        <span class="skill-tag">Figma</span>
+        <span class="skill-tag">Git</span>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+
+    <section class="projects" id="projects">
+      <h2>Projects</h2>
+      <div class="project-grid">
+        <div class="project-card">
+          <h3 class="project-title">☕ Café Bliss Website</h3>
+          <p class="project-desc">
+            A cozy and modern café website designed with pastel tones, animated
+            menus, and interactive transitions.
+          </p>
+          <p class="project-tools">
+            <strong>Tools:</strong> HTML, CSS, JavaScript, GSAP
+          </p>
+          <p class="project-learned">
+            Learned how to animate scroll-based elements and create warm,
+            user-friendly interfaces.
+          </p>
+        </div>
+
+        <div class="project-card">
+          <h3 class="project-title">🌼 Dreamy Portfolio</h3>
+          <p class="project-desc">
+            My personal portfolio crafted with a soft, peony-inspired theme.
+            Light/dark mode, floating visuals, and smooth sections.
+          </p>
+          <p class="project-tools">
+            <strong>Tools:</strong> HTML, CSS, JavaScript, GSAP, Figma
+          </p>
+          <p class="project-learned">
+            Deepened my design thinking and responsive layout skills, plus added
+            GSAP for subtle animations.
+          </p>
+        </div>
+
+        <div class="project-card">
+          <h3 class="project-title">🍃 Nature Blog UI</h3>
+          <p class="project-desc">
+            A calming blog interface inspired by nature. Smooth reading
+            experience with soft card layout and gentle tones.
+          </p>
+          <p class="project-tools">
+            <strong>Tools:</strong> HTML, CSS, Flexbox, Custom Fonts
+          </p>
+          <p class="project-learned">
+            Practiced clean typographic design, component structuring, and color
+            harmony in layout.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="experience" id="experience">
+      <h2>Experience</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <h3 class="role">Web Designing Intern</h3>
+          <p class="company">Numerique Diginautix Pvt. Ltd. — Remote</p>
+          <p class="duration">April – July 2025</p>
+          <ul class="responsibilities">
+            <li>Created responsive layouts using HTML & CSS.</li>
+            <li>Joined design discussions and improved UI flows.</li>
+            <li>Built small self-led features to enhance usability.</li>
+          </ul>
+        </div>
+
+        <div class="timeline-item">
+          <h3 class="role">Personal Projects & Learning</h3>
+          <p class="duration">Ongoing</p>
+          <ul class="responsibilities">
+            <li>Designed soft-themed websites for practice.</li>
+            <li>Explored animations, UI consistency, and layout styling.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+
+    <section class="contact" id="contact">
+      <h2>Let’s Bloom Together</h2>
+      <div class="contact-wrapper">
+        <div class="contact-info">
+          <p>Drop a message to brighten my day 🌼</p>
+          <p><strong>Email:</strong> your@email.com</p>
+          <p><strong>Location:</strong> Peony Garden, 🌸 Dreamland</p>
+        </div>
+        <form class="contact-form">
+          <div class="input-group">
+            <input type="text" placeholder="Your Name" required />
+            <input type="email" placeholder="Your Email" required />
+          </div>
+          <textarea rows="5" placeholder="Your Message" required></textarea>
+          <button type="submit" class="cta-button">Send Some Sunshine</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+
+    <footer class="footer-cute">
+      <p>🌻 Made with sunlight by <strong>Ananya</strong> | © 2025</p>
+      <div class="social-icons-cute">
+        <a
+          href="https://facebook.com/yourprofile"
+          target="_blank"
+          aria-label="Facebook"
+        >
+          <i class="ri-facebook-circle-line"></i>
+        </a>
+        <a
+          href="https://twitter.com/yourprofile"
+          target="_blank"
+          aria-label="Twitter"
+        >
+          <i class="ri-twitter-line"></i>
+        </a>
+        <a
+          href="https://instagram.com/yourprofile"
+          target="_blank"
+          aria-label="Instagram"
+        >
+          <i class="ri-instagram-line"></i>
+        </a>
+        <a
+          href="https://linkedin.com/in/yourprofile"
+          target="_blank"
+          aria-label="LinkedIn"
+        >
+          <i class="ri-linkedin-box-line"></i>
+        </a>
+      </div>
+    </footer>
+
+    <!-- Dark/Light Theme Script -->
+    <script>
+      const toggleBtn = document.querySelector(".theme-toggle");
+
+      toggleBtn.addEventListener("click", () => {
+        document.body.classList.toggle("dark-mode");
+
+        // Change icon on toggle
+        if (document.body.classList.contains("dark-mode")) {
+          toggleBtn.textContent = "🌙"; // Moon icon for dark mode
+        } else {
+          toggleBtn.textContent = "🌞"; // Sun icon for light mode
+        }
+      });
+    </script>
+  </body>
+</html>
