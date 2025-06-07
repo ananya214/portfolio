@@ -28,39 +28,40 @@ body.dark-mode {
   margin: 0;
   padding: 0;
 }
-body {
-  font-family: "Lora", serif !important; /* or 'Raleway', sans-serif */
-  color: var(--text-primary) !important;
-}
-/* For the whole page, hide scrollbars */
-/* For the whole page (body and html) */
+
 body,
 html {
-  overflow-x: hidden; /* disable horizontal scroll */
-  overflow-y: scroll; /* enable vertical scroll */
-  scrollbar-width: none; /* Firefox: hide scrollbar */
-  -ms-overflow-style: none; /* IE and Edge: hide scrollbar */
+  overflow-x: hidden;
+  overflow-y: scroll;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
 
-/* Chrome, Safari, Opera */
 body::-webkit-scrollbar {
-  width: 0; /* hide vertical scrollbar */
-  background: transparent; /* optional: just to be safe */
+  width: 0;
+  background: transparent;
+}
+
+body {
+  font-family: "Lora", serif !important;
+  color: var(--text-primary) !important;
+  background: var(--bg-color);
+  line-height: 1.7;
+  transition: background 0.4s ease, color 0.4s ease;
 }
 
 h1,
 h2,
 h3 {
-  font-family: "Playfair Display", serif !important; /* or 'Poppins', sans-serif */
+  font-family: "Playfair Display", serif !important;
   font-weight: 700 !important;
+  color: var(--brown);
 }
 
-body {
-  font-family: "Poppins", sans-serif;
-  background: var(--bg-color);
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3 {
   color: var(--text-primary);
-  line-height: 1.7;
-  transition: background 0.4s ease, color 0.4s ease;
 }
 
 a {
@@ -151,9 +152,6 @@ body.dark-mode .hero {
   border-radius: 2rem;
 }
 
-/* ───────────────────────────
-   3.  Avatar image
-   ─────────────────────────── */
 .avatar-placeholder img {
   width: 280px;
   height: auto;
@@ -175,7 +173,6 @@ body.dark-mode .hero {
     text-align: center;
     padding-top: 4rem;
   }
-
   .hero-content,
   .avatar-placeholder {
     max-width: 100%;
@@ -188,7 +185,6 @@ body.dark-mode .hero {
 .skills {
   background: linear-gradient(180deg, #fff1f5 0%, #fef6f9 100%);
 }
-
 .projects {
   background: var(--accent-green);
 }
@@ -198,7 +194,6 @@ body.dark-mode .hero {
 .contact {
   background: #fef6f9;
 }
-
 body.dark-mode .about,
 body.dark-mode .skills {
   background: linear-gradient(180deg, #3c3338 0%, #2f2a2d 100%);
@@ -213,19 +208,7 @@ body.dark-mode .contact {
   background: #3c3338;
 }
 
-/* Headings */
-h1,
-h2,
-h3 {
-  color: var(--brown);
-}
-
-body.dark-mode h1,
-body.dark-mode h2,
-body.dark-mode h3 {
-  color: var(--text-primary);
-}
-
+/* Section Headings */
 .about h2,
 .skills h2,
 .projects h2,
@@ -234,6 +217,11 @@ body.dark-mode h3 {
   font-size: 2rem;
   margin-bottom: 1.5rem;
   position: relative;
+  color: var(--text-primary);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
 
 .about h2::after,
@@ -303,12 +291,10 @@ body.dark-mode .project-card {
   padding-left: 2rem;
   position: relative;
 }
-
 .timeline-item {
   margin-bottom: 2.5rem;
   position: relative;
 }
-
 .timeline-item::before {
   content: "🌷";
   position: absolute;
@@ -316,11 +302,11 @@ body.dark-mode .project-card {
   font-size: 1.3rem;
 }
 
-/* Simple & Elegant Peony Button */
+/* Peony Button */
 .cta-button,
 .contact button {
   background: linear-gradient(135deg, #f9b7bd, #f7cad0 60%, #f2e2e6);
-  color: #6a3e46; /* deep rosy brown */
+  color: #6a3e46;
   border-radius: 40px;
   padding: 1rem 3rem;
   font-weight: 600;
@@ -328,7 +314,7 @@ body.dark-mode .project-card {
   border: none;
   cursor: pointer;
   box-shadow: 0 4px 8px rgba(249, 183, 189, 0.5);
-  transition: background 0.4s ease, box-shadow 0.4s ease, color 0.3s ease;
+  transition: background 0.4s, box-shadow 0.4s, color 0.3s;
 }
 
 .cta-button:hover,
@@ -350,7 +336,7 @@ body.dark-mode .project-card {
   box-shadow: 0 3px 6px rgba(249, 183, 189, 0.4);
 }
 
-/* Dark Mode */
+/* Dark Mode Buttons */
 body.dark-mode .cta-button,
 body.dark-mode .contact button {
   background: linear-gradient(135deg, #b06a75, #ca8b97 70%, #d9aeb6);
@@ -365,6 +351,7 @@ body.dark-mode .contact button:hover {
   box-shadow: 0 6px 15px rgba(160, 132, 177, 0.6);
 }
 
+/* Contact Section */
 #contact {
   background-color: var(--bg-color);
   color: var(--text-primary);
@@ -429,7 +416,7 @@ body.dark-mode .contact button:hover {
   background: var(--card-bg);
   color: var(--text-primary);
   font-size: 1rem;
-  transition: border-color 0.3s ease;
+  transition: border-color 0.3s;
 }
 
 .input-group input:focus {
@@ -448,7 +435,7 @@ textarea {
   font-size: 1rem;
   resize: vertical;
   min-height: 120px;
-  transition: border-color 0.3s ease;
+  transition: border-color 0.3s;
 }
 
 textarea:focus {
@@ -467,7 +454,7 @@ textarea:focus {
   border-radius: 30px;
   cursor: pointer;
   box-shadow: 0 6px 14px var(--shadow-color);
-  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  transition: background-color 0.3s, box-shadow 0.3s;
   user-select: none;
 }
 
@@ -478,17 +465,15 @@ textarea:focus {
   outline: none;
 }
 
-/* Responsive */
+/* Responsive Contact */
 @media (max-width: 768px) {
   .contact-wrapper {
     flex-direction: column;
     align-items: center;
   }
-
   .input-group input {
     flex: 1 1 100%;
   }
-
   .contact-info,
   .contact-form {
     width: 100%;
@@ -504,7 +489,7 @@ footer {
   text-align: center;
   font-size: 0.95rem;
   border-top: 2px solid var(--secondary-orange);
-  transition: background 0.4s ease, color 0.4s ease;
+  transition: background 0.4s, color 0.4s;
 }
 
 body.dark-mode footer {
@@ -513,9 +498,10 @@ body.dark-mode footer {
   border-top: 2px solid var(--accent-green);
 }
 
+/* Skills Section */
 .skills {
   background-color: var(--bg-color);
-  padding: 3rem 1rem 4rem;
+  padding: 4rem 1rem;
   text-align: center;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: var(--text-primary);
@@ -525,32 +511,13 @@ body.dark-mode footer {
 }
 
 .skills h2 {
-  font-size: 2.6rem;
-  margin-bottom: 0.5rem;
-  font-weight: 700;
+  font-size: 2.5rem;
+  margin-bottom: 1.2rem;
   color: var(--text-primary);
-  position: relative;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.accent-flower {
-  font-size: 1.8rem;
-  margin-left: 0.6rem;
-  color: var(--secondary-coral);
-  user-select: none;
-  transform-origin: center;
-  animation: gentle-bloom 3s ease-in-out infinite alternate;
-}
-
-@keyframes gentle-bloom {
-  0% {
-    transform: scale(1);
-  }
-  100% {
-    transform: scale(1.1);
-  }
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
 
 .skills-intro {
@@ -596,25 +563,52 @@ body.dark-mode footer {
   outline: none;
 }
 
-/* Responsive text sizes */
-@media (max-width: 480px) {
+/* Responsive Skills */
+@media (max-width: 768px) {
   .skills h2 {
     font-size: 2rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
   }
   .skills-intro {
     font-size: 1rem;
+    max-width: 90%;
   }
   .skill-tag {
     font-size: 1rem;
-    padding: 0.5rem 1.3rem;
+    padding: 0.5rem 1.2rem;
+  }
+  .skill-tags {
+    gap: 0.75rem 1rem;
+    max-width: 90%;
   }
 }
+@media (max-width: 480px) {
+  .skills h2 {
+    font-size: 1.75rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+  .skills-intro {
+    font-size: 0.9rem;
+  }
+  .skill-tag {
+    font-size: 0.9rem;
+    padding: 0.4rem 1rem;
+  }
+}
+
+/* Projects Section */
 .projects {
   padding: 3rem 1rem 4rem;
   text-align: center;
   background-color: var(--bg-color);
   color: var(--text-primary);
-  transition: background-color 0.3s ease, color 0.3s ease;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 .projects h2 {
@@ -622,6 +616,10 @@ body.dark-mode footer {
   margin-bottom: 2rem;
   font-weight: 700;
   color: var(--text-primary);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
 
 .project-grid {
@@ -640,7 +638,7 @@ body.dark-mode footer {
   box-shadow: 0 6px 14px var(--shadow-color);
   width: 100%;
   max-width: 300px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.3s, box-shadow 0.3s;
   text-align: left;
 }
 
@@ -671,13 +669,14 @@ body.dark-mode footer {
   line-height: 1.4;
 }
 
-/* Responsive */
 @media (max-width: 768px) {
   .project-grid {
     flex-direction: column;
     align-items: center;
   }
 }
+
+/* Cute Footer */
 .footer-cute {
   text-align: center;
   background: #fff5f8;
