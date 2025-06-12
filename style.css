@@ -1,25 +1,25 @@
 :root {
-  /* Light Mode */
-  --bg-color: #fff8f9;
-  --primary-pink: #f8d3d6;
-  --secondary-coral: #f5a3a6;
-  --accent-lilac: #d5c2db;
-  --text-primary: #5a3d43;
-  --text-secondary: #a78385;
-  --shadow-color: #e9cfd2;
-  --card-bg: rgba(255, 244, 246, 0.75);
+  /* Light Mode - Soft & Airy */
+  --bg-color: #fff5f7;
+  --primary-pink: #fbd2d9;
+  --secondary-coral: #f8a8b0;
+  --accent-lilac: #e0cde8;
+  --text-primary: #5c3b44;
+  --text-secondary: #9e747e;
+  --shadow-color: #ecd4db;
+  --card-bg: rgba(255, 245, 248, 0.7); /* glassy effect */
 }
 
 body.dark-mode {
-  /* Dark Mode */
-  --bg-color: #2a2126;
-  --primary-pink: #e59aa2;
-  --secondary-coral: #cd768c;
-  --accent-lilac: #a08db0;
-  --text-primary: #f2d7db;
-  --text-secondary: #c9a8ac;
-  --shadow-color: rgba(0, 0, 0, 0.4);
-  --card-bg: rgba(45, 33, 38, 0.85);
+  /* Dark Mode - Dreamy & Warm */
+  --bg-color: #1e161a;
+  --primary-pink: #ec9fa9;
+  --secondary-coral: #b46078;
+  --accent-lilac: #a28ab3;
+  --text-primary: #f7e4e8;
+  --text-secondary: #c5a4ac;
+  --shadow-color: rgba(0, 0, 0, 0.6);
+  --card-bg: rgba(40, 28, 34, 0.85); /* velvety, soft shadow */
 }
 
 /* Reset + Base */
@@ -616,6 +616,20 @@ body.dark-mode footer {
   color: var(--text-secondary);
   margin-bottom: 0.4rem;
   line-height: 1.4;
+}
+.project-link-btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: var(--secondary-coral);
+  color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.project-link-btn:hover {
+  background-color: var(--primary-pink);
 }
 
 /* Cute Footer */
